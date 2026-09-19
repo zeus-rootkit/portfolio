@@ -1,102 +1,91 @@
 :root{
-  /* قاعدة تنسيق تستهدف :root */
-  --bg:#080808; /* --bg: متغير CSS مخصص؛ يُستخدم لاحقاً بواسطة var(--bg). */
-  --panel:#0d0d0e; /* --panel: متغير CSS مخصص؛ يُستخدم لاحقاً بواسطة var(--panel). */
-  --soft:#151516; /* --soft: متغير CSS مخصص؛ يُستخدم لاحقاً بواسطة var(--soft). */
-  --text:#f2f2f2; /* --text: متغير CSS مخصص؛ يُستخدم لاحقاً بواسطة var(--text). */
-  --muted:#99999e; /* --muted: متغير CSS مخصص؛ يُستخدم لاحقاً بواسطة var(--muted). */
-  --line:#242426; /* --line: متغير CSS مخصص؛ يُستخدم لاحقاً بواسطة var(--line). */
-  --red:#ef293d; /* --red: متغير CSS مخصص؛ يُستخدم لاحقاً بواسطة var(--red). */
-  --red-deep:#870c19; /* --red-deep: متغير CSS مخصص؛ يُستخدم لاحقاً بواسطة var(--red-deep). */
-  --max:1440px; /* --max: متغير CSS مخصص؛ يُستخدم لاحقاً بواسطة var(--max). */
+  --bg:#080808;
+  --panel:#0d0d0e;
+  --soft:#151516;
+  --text:#f2f2f2;
+  --muted:#99999e;
+  --line:#242426;
+  --red:#ef293d;
+  --red-deep:#870c19;
+  --max:1440px;
 }
 
 *{
-  /* قاعدة تنسيق تستهدف * */
-  box-sizing:border-box; /* box-sizing: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  box-sizing:border-box;
 }
 html{
-  /* قاعدة تنسيق تستهدف html */
-  scroll-behavior:smooth; /* scroll-behavior: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  scroll-padding-top:88px; /* scroll-padding-top: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  scroll-behavior:smooth;
+  scroll-padding-top:88px;
 }
 body{
-  /* قاعدة تنسيق تستهدف body */
-  margin:0; /* margin: المسافة الخارجية */
-  background:var(--bg); /* background: الخلفية */
-  color:var(--text); /* color: لون النص */
-  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; /* font-family: نوع الخط */
-  overflow-x:hidden; /* overflow-x: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  overflow-x:hidden;
 }
 a{
-  /* قاعدة تنسيق تستهدف a */
-  color:inherit; /* color: لون النص */
-  text-decoration:none; /* text-decoration: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  color:inherit;
+  text-decoration:none;
 }
 button{
-  /* قاعدة تنسيق تستهدف button */
-  font:inherit; /* font: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  font:inherit;
 }
 .sr-only{
-  /* قاعدة تنسيق تستهدف .sr-only */
-  position:absolute; /* position: طريقة تموضع العنصر */
-  width:1px; /* width: العرض */
-  height:1px; /* height: الارتفاع */
-  padding:0; /* padding: المسافة الداخلية */
-  margin:-1px; /* margin: المسافة الخارجية */
-  overflow:hidden; /* overflow: التعامل مع المحتوى الخارج عن الحدود */
-  clip:rect(0,0,0,0); /* clip: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  white-space:nowrap; /* white-space: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  border:0; /* border: حدود العنصر */
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  white-space:nowrap;
+  border:0;
 }
 .noise{
-  /* قاعدة تنسيق تستهدف .noise */
-  position:fixed; /* position: طريقة تموضع العنصر */
-  inset:0; /* inset: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  pointer-events:none; /* pointer-events: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  z-index:80; /* z-index: ترتيب الطبقات */
-  opacity:.035; /* opacity: درجة الشفافية */
-  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.95' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.9'/%3E%3C/svg%3E"); /* background-image: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:80;
+  opacity:.035;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.95' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.9'/%3E%3C/svg%3E");
 }
 .cursor-glow{
-  /* قاعدة تنسيق تستهدف .cursor-glow */
-  position:fixed; /* position: طريقة تموضع العنصر */
-  width:420px; /* width: العرض */
-  height:420px; /* height: الارتفاع */
-  border-radius:50%; /* border-radius: تدوير الزوايا */
-  background:radial-gradient(circle,rgba(238,30,53,.07),transparent 65%); /* background: الخلفية */
-  pointer-events:none; /* pointer-events: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  z-index:0; /* z-index: ترتيب الطبقات */
-  transform:translate(-50%,-50%); /* transform: تحريك أو تدوير أو تغيير حجم العنصر بصرياً */
+  position:fixed;
+  width:420px;
+  height:420px;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(238,30,53,.07),transparent 65%);
+  pointer-events:none;
+  z-index:0;
+  transform:translate(-50%,-50%);
 }
 
 .site-header{
-  /* قاعدة تنسيق تستهدف .site-header */
-  height:86px; /* height: الارتفاع */
-  display:flex; /* display: طريقة ترتيب العنصر */
-  align-items:center; /* align-items: المحاذاة على المحور العرضي */
-  justify-content:space-between; /* justify-content: توزيع العناصر على المحور الرئيسي */
-  max-width:var(--max); /* max-width: أقصى عرض */
-  width:100%; /* width: العرض */
-  margin:auto; /* margin: المسافة الخارجية */
-  padding:0 42px; /* padding: المسافة الداخلية */
-  position:fixed; /* position: طريقة تموضع العنصر */
-  top:0; /* top: المسافة من الأعلى */
-  left:0; /* left: المسافة من اليسار */
-  right:0; /* right: المسافة من اليمين */
-  z-index:50; /* z-index: ترتيب الطبقات */
-  transition:transform .28s ease,opacity .28s ease,background .28s ease; /* transition: انتقال ناعم عند تغيّر الحالة */
-  opacity:1; /* opacity: درجة الشفافية */
-  background:rgba(8,8,8,.18); /* background: الخلفية */
-  backdrop-filter:blur(10px); /* backdrop-filter: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  height:86px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  max-width:var(--max);
+  width:100%;
+  margin:auto;
+  padding:0 42px;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:50;
+  transition:transform .28s ease,opacity .28s ease,background .28s ease;
+  opacity:1;
+  background:rgba(8,8,8,.18);
+  backdrop-filter:blur(10px);
 }
 .site-header.is-hidden{
-  transform:translateY(-120%); /* transform: تحريك أو تدوير أو تغيير حجم العنصر بصرياً */
-  opacity:0; /* opacity: درجة الشفافية */
+  transform:translateY(-120%);
+  opacity:0;
   pointer-events:none;
 }
 
-/* شريط التنقل الرئيسي */
 .site-header{
   max-width:none;
   height:76px;
@@ -183,661 +172,565 @@ button{
 }
 
 .hero{
-  /* قاعدة تنسيق تستهدف .hero */
-  min-height:900px; /* min-height: أقل ارتفاع */
-  max-width:none; /* max-width: أقصى عرض */
-  width:100%; /* width: العرض */
-  margin:auto; /* margin: المسافة الخارجية */
-  position:relative; /* position: طريقة تموضع العنصر */
-  overflow:hidden; /* overflow: التعامل مع المحتوى الخارج عن الحدود */
-  border-bottom:1px solid #19191a; /* border-bottom: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  background:linear-gradient(90deg,rgba(0,0,0,.42),rgba(0,0,0,.14) 28%,rgba(0,0,0,.22) 100%),linear-gradient(180deg,rgba(0,0,0,.18),rgba(0,0,0,.28)),url("./assets/hero-scene.png") center center/cover no-repeat; /* background: صورة الخلفية كاملة مع طبقة تظليل */
+  min-height:900px;
+  max-width:none;
+  width:100%;
+  margin:auto;
+  position:relative;
+  overflow:hidden;
+  border-bottom:1px solid #19191a;
+  background:linear-gradient(90deg,rgba(0,0,0,.42),rgba(0,0,0,.14) 28%,rgba(0,0,0,.22) 100%),linear-gradient(180deg,rgba(0,0,0,.18),rgba(0,0,0,.28)),url("./assets/hero-scene.png") center center/cover no-repeat;
 }
 .hero:before{
-  /* قاعدة تنسيق تستهدف .hero:before */
-  content:""; /* content: محتوى العنصر الزائف */
-  position:absolute; /* position: طريقة تموضع العنصر */
-  inset:0; /* inset: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  background:radial-gradient(circle at 60% 42%,rgba(255,18,38,.18),transparent 34%),linear-gradient(90deg,rgba(255,255,255,.01) 1px,transparent 1px); /* background: الخلفية */
-  background-size:100% 100%,150px 100%; /* background-size: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  mask-image:linear-gradient(to right,transparent,black,transparent); /* mask-image: قناع يتحكم بأجزاء الصورة الظاهرة */
-  opacity:.5; /* opacity: درجة الشفافية */
+  content:"";
+  position:absolute;
+  inset:0;
+  background:radial-gradient(circle at 60% 42%,rgba(255,18,38,.18),transparent 34%),linear-gradient(90deg,rgba(255,255,255,.01) 1px,transparent 1px);
+  background-size:100% 100%,150px 100%;
+  mask-image:linear-gradient(to right,transparent,black,transparent);
+  opacity:.5;
 }
 .hero:after{
-  /* قاعدة تنسيق تستهدف .hero:after */
-  content:""; /* content: محتوى العنصر الزائف */
-  position:absolute; /* position: طريقة تموضع العنصر */
-  inset:0; /* inset: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  background:radial-gradient(circle at 65% 42%,rgba(255,18,36,.28) 0%,rgba(180,0,18,.15) 22%,transparent 42%); /* background: الخلفية */
-  pointer-events:none; /* pointer-events: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  content:"";
+  position:absolute;
+  inset:0;
+  background:radial-gradient(circle at 65% 42%,rgba(255,18,36,.28) 0%,rgba(180,0,18,.15) 22%,transparent 42%);
+  pointer-events:none;
 }
 .hero-copy{
-  /* قاعدة تنسيق تستهدف .hero-copy */
-  position:relative; /* position: طريقة تموضع العنصر */
-  z-index:5; /* z-index: ترتيب الطبقات */
-  width:52%; /* width: العرض */
-  padding:160px 0 70px max(6vw,70px); /* padding: المسافة الداخلية */
+  position:relative;
+  z-index:5;
+  width:52%;
+  padding:160px 0 70px max(6vw,70px);
 }
 .eyebrow,.section-index{
-  /* قاعدة تنسيق تستهدف .eyebrow,.section-index */
-  color:var(--red); /* color: لون النص */
-  text-transform:uppercase; /* text-transform: تغيير شكل حروف النص */
-  letter-spacing:.38em; /* letter-spacing: المسافة بين الحروف */
-  font-size:12px; /* font-size: حجم الخط */
-  font-weight:600; /* font-weight: سماكة الخط */
+  color:var(--red);
+  text-transform:uppercase;
+  letter-spacing:.38em;
+  font-size:12px;
+  font-weight:600;
 }
 .hero h1,.section h2{
-  /* قاعدة تنسيق تستهدف .hero h1,.section h2 */
-  font-size:clamp(64px,6.3vw,104px); /* font-size: حجم الخط */
-  line-height:.88; /* line-height: ارتفاع السطر */
-  letter-spacing:-.07em; /* letter-spacing: المسافة بين الحروف */
-  text-transform:uppercase; /* text-transform: تغيير شكل حروف النص */
-  margin:28px 0 25px; /* margin: المسافة الخارجية */
-  font-weight:900; /* font-weight: سماكة الخط */
+  font-size:clamp(64px,6.3vw,104px);
+  line-height:.88;
+  letter-spacing:-.07em;
+  text-transform:uppercase;
+  margin:28px 0 25px;
+  font-weight:900;
 }
 .hero h1 span,.section h2 span{
-  /* قاعدة تنسيق تستهدف .hero h1 span,.section h2 span */
-  color:var(--red); /* color: لون النص */
+  color:var(--red);
 }
 .hero-text{
-  /* قاعدة تنسيق تستهدف .hero-text */
-  max-width:480px; /* max-width: أقصى عرض */
-  color:#b5b5b9; /* color: لون النص */
-  font-size:17px; /* font-size: حجم الخط */
-  line-height:1.65; /* line-height: ارتفاع السطر */
+  max-width:480px;
+  color:#b5b5b9;
+  font-size:17px;
+  line-height:1.65;
 }
 .hero-actions{
-  /* قاعدة تنسيق تستهدف .hero-actions */
-  display:flex; /* display: طريقة ترتيب العنصر */
-  align-items:center; /* align-items: المحاذاة على المحور العرضي */
-  margin-top:38px; /* margin-top: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  display:flex;
+  align-items:center;
+  margin-top:38px;
 }
 .round-arrow{
-  /* قاعدة تنسيق تستهدف .round-arrow */
-  width:76px; /* width: العرض */
-  height:76px; /* height: الارتفاع */
-  border:1px solid var(--red); /* border: حدود العنصر */
-  border-radius:50%; /* border-radius: تدوير الزوايا */
-  display:grid; /* display: طريقة ترتيب العنصر */
-  place-items:center; /* place-items: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  font-size:28px; /* font-size: حجم الخط */
-  transition:.35s; /* transition: انتقال ناعم عند تغير الخصائص */
+  width:76px;
+  height:76px;
+  border:1px solid var(--red);
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  font-size:28px;
+  transition:.35s;
 }
 .round-arrow:hover{
-  /* قاعدة تنسيق تستهدف .round-arrow:hover */
-  background:var(--red); /* background: الخلفية */
-  transform:rotate(-45deg); /* transform: تحريك أو تدوير أو تغيير حجم العنصر بصرياً */
+  background:var(--red);
+  transform:rotate(-45deg);
 }
 .text-link{
-  /* قاعدة تنسيق تستهدف .text-link */
-  font-size:13px; /* font-size: حجم الخط */
-  font-weight:700; /* font-weight: سماكة الخط */
-  text-transform:uppercase; /* text-transform: تغيير شكل حروف النص */
-  margin-left:26px; /* margin-left: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  display:flex; /* display: طريقة ترتيب العنصر */
-  align-items:center; /* align-items: المحاذاة على المحور العرضي */
-  gap:18px; /* gap: المسافة بين العناصر */
+  font-size:13px;
+  font-weight:700;
+  text-transform:uppercase;
+  margin-left:26px;
+  display:flex;
+  align-items:center;
+  gap:18px;
 }
 .text-link i{
-  /* قاعدة تنسيق تستهدف .text-link i */
-  display:block; /* display: طريقة ترتيب العنصر */
-  width:70px; /* width: العرض */
-  height:1px; /* height: الارتفاع */
-  background:linear-gradient(to right,#777,transparent); /* background: الخلفية */
+  display:block;
+  width:70px;
+  height:1px;
+  background:linear-gradient(to right,#777,transparent);
 }
 .hero-proof{
-  /* قاعدة تنسيق تستهدف .hero-proof */
-  display:grid; /* display: طريقة ترتيب العنصر */
-  grid-template-columns:repeat(3,1fr); /* grid-template-columns: عدد وأحجام أعمدة الشبكة */
-  gap:18px; /* gap: المسافة بين العناصر */
-  max-width:520px; /* max-width: أقصى عرض */
-  margin-top:86px; /* margin-top: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  max-width:520px;
+  margin-top:86px;
 }
 .hero-proof div{
-  /* قاعدة تنسيق تستهدف .hero-proof div */
-  border-top:1px solid #444; /* border-top: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  padding-top:14px; /* padding-top: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  border-top:1px solid #444;
+  padding-top:14px;
 }
 .hero-proof strong{
-  /* قاعدة تنسيق تستهدف .hero-proof strong */
-  font-size:12px; /* font-size: حجم الخط */
-  margin-right:13px; /* margin-right: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  font-size:12px;
+  margin-right:13px;
 }
 .hero-proof span{
-  /* قاعدة تنسيق تستهدف .hero-proof span */
-  color:#888; /* color: لون النص */
-  font-size:11px; /* font-size: حجم الخط */
-  text-transform:uppercase; /* text-transform: تغيير شكل حروف النص */
-  letter-spacing:.16em; /* letter-spacing: المسافة بين الحروف */
+  color:#888;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:.16em;
 }
 .hero-visual{
-  /* قاعدة تنسيق تستهدف .hero-visual */
-  display:none; /* display: إخفاء الحاوية الداخلية لأن الصورة هي الآن خلفية كاملة للشريحة */
+  display:none;
 }
 .orb{
-  /* قاعدة تنسيق تستهدف .orb */
-  position:absolute; /* position: طريقة تموضع العنصر */
-  border-radius:50%; /* border-radius: تدوير الزوايا */
-  background:radial-gradient(circle at 35% 30%,#f03946,#9d101d 55%,#3c0308); /* background: الخلفية */
-  box-shadow:inset -30px -30px 70px rgba(0,0,0,.4),0 0 90px rgba(205,10,29,.1); /* box-shadow: ظل العنصر */
+  position:absolute;
+  border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#f03946,#9d101d 55%,#3c0308);
+  box-shadow:inset -30px -30px 70px rgba(0,0,0,.4),0 0 90px rgba(205,10,29,.1);
 }
 .orb-main{
-  /* قاعدة تنسيق تستهدف .orb-main */
-  width:min(950px,72vw); /* width: العرض */
-  height:min(950px,72vw); /* height: الارتفاع */
-  top:-30px; /* top: المسافة من الأعلى */
-  right:5%; /* right: المسافة من اليمين */
-  filter:blur(2px) saturate(1.2); /* filter: تأثير بصري */
-  animation:orbPulse 9s ease-in-out infinite alternate; /* animation: حركة ناعمة */
+  width:min(950px,72vw);
+  height:min(950px,72vw);
+  top:-30px;
+  right:5%;
+  filter:blur(2px) saturate(1.2);
+  animation:orbPulse 9s ease-in-out infinite alternate;
 }
 .orb-small{
-  /* قاعدة تنسيق تستهدف .orb-small */
-  width:260px; /* width: العرض */
-  height:260px; /* height: الارتفاع */
-  bottom:20px; /* bottom: المسافة من الأسفل */
-  left:12%; /* left: المسافة من اليسار */
-  opacity:.75; /* opacity: درجة الشفافية */
-  animation:orbFloat 12s ease-in-out infinite alternate; /* animation: حركة ناعمة */
+  width:260px;
+  height:260px;
+  bottom:20px;
+  left:12%;
+  opacity:.75;
+  animation:orbFloat 12s ease-in-out infinite alternate;
 }
 .grid-sphere{
-  /* قاعدة تنسيق تستهدف .grid-sphere */
-  position:absolute; /* position: طريقة تموضع العنصر */
-  width:620px; /* width: العرض */
-  height:620px; /* height: الارتفاع */
-  right:5%; /* right: المسافة من اليمين */
-  bottom:-230px; /* bottom: المسافة من الأسفل */
-  border-radius:50%; /* border-radius: تدوير الزوايا */
-  background-image:linear-gradient(rgba(239,41,61,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(239,41,61,.12) 1px,transparent 1px); /* background-image: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  background-size:26px 26px; /* background-size: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  transform:perspective(600px) rotateX(65deg); /* transform: تحريك أو تدوير أو تغيير حجم العنصر بصرياً */
-  opacity:.25; /* opacity: درجة الشفافية */
-  animation:gridDrift 14s ease-in-out infinite alternate; /* animation: حركة ناعمة */
+  position:absolute;
+  width:620px;
+  height:620px;
+  right:5%;
+  bottom:-230px;
+  border-radius:50%;
+  background-image:linear-gradient(rgba(239,41,61,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(239,41,61,.12) 1px,transparent 1px);
+  background-size:26px 26px;
+  transform:perspective(600px) rotateX(65deg);
+  opacity:.25;
+  animation:gridDrift 14s ease-in-out infinite alternate;
 }
 .side-words{
-  /* قاعدة تنسيق تستهدف .side-words */
-  position:absolute; /* position: طريقة تموضع العنصر */
-  z-index:6; /* z-index: ترتيب الطبقات */
-  right:2%; /* right: المسافة من اليمين */
-  padding-left:18px; /* padding-left: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  border-left:1px solid #6c6c70; /* border-left: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  display:flex; /* display: طريقة ترتيب العنصر */
-  flex-direction:column; /* flex-direction: اتجاه ترتيب العناصر */
-  text-transform:uppercase; /* text-transform: تغيير شكل حروف النص */
-  letter-spacing:.13em; /* letter-spacing: المسافة بين الحروف */
-  font-size:11px; /* font-size: حجم الخط */
-  line-height:1.75; /* line-height: ارتفاع السطر */
-  color:#aaa; /* color: لون النص */
+  position:absolute;
+  z-index:6;
+  right:2%;
+  padding-left:18px;
+  border-left:1px solid #6c6c70;
+  display:flex;
+  flex-direction:column;
+  text-transform:uppercase;
+  letter-spacing:.13em;
+  font-size:11px;
+  line-height:1.75;
+  color:#aaa;
 }
 .side-words span{
-  /* قاعدة تنسيق تستهدف .side-words span */
-  display:block; /* display: طريقة ترتيب العنصر */
-  transition:transform .3s ease,color .3s ease; /* transition: انتقال ناعم عند تغير الخصائص */
+  display:block;
+  transition:transform .3s ease,color .3s ease;
 }
 .side-words span:hover{
-  /* قاعدة تنسيق تستهدف .side-words span:hover */
-  color:#fff; /* color: لون النص */
-  transform:translateX(-4px); /* transform: تحريك أو تدوير أو تغيير حجم العنصر بصرياً */
+  color:#fff;
+  transform:translateX(-4px);
 }
 .side-words-top{
-  /* قاعدة تنسيق تستهدف .side-words-top */
-  top:80px; /* top: المسافة من الأعلى */
+  top:80px;
 }
 .side-words-bottom{
-  /* قاعدة تنسيق تستهدف .side-words-bottom */
-  bottom:70px; /* bottom: المسافة من الأسفل */
-  border-color:var(--red); /* border-color: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  bottom:70px;
+  border-color:var(--red);
 }
 .scroll-cue{
-  /* قاعدة تنسيق تستهدف .scroll-cue */
-  position:absolute; /* position: طريقة تموضع العنصر */
-  right:35px; /* right: المسافة من اليمين */
-  bottom:30px; /* bottom: المسافة من الأسفل */
-  z-index:8; /* z-index: ترتيب الطبقات */
-  display:flex; /* display: طريقة ترتيب العنصر */
-  align-items:center; /* align-items: المحاذاة على المحور العرضي */
-  gap:14px; /* gap: المسافة بين العناصر */
-  transform:rotate(90deg); /* transform: تحريك أو تدوير أو تغيير حجم العنصر بصرياً */
-  transform-origin:right bottom; /* transform-origin: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  font-size:10px; /* font-size: حجم الخط */
-  text-transform:uppercase; /* text-transform: تغيير شكل حروف النص */
-  letter-spacing:.18em; /* letter-spacing: المسافة بين الحروف */
-  color:#777; /* color: لون النص */
+  position:absolute;
+  right:35px;
+  bottom:30px;
+  z-index:8;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  transform:rotate(90deg);
+  transform-origin:right bottom;
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  color:#777;
 }
 .scroll-cue i{
-  /* قاعدة تنسيق تستهدف .scroll-cue i */
-  width:55px; /* width: العرض */
-  height:1px; /* height: الارتفاع */
-  background:#555; /* background: الخلفية */
+  width:55px;
+  height:1px;
+  background:#555;
 }
 @keyframes orbitPulse{
-  /* قاعدة تنسيق تستهدف @keyframes orbitPulse */
-  0% { transform:scale(.98) translateY(0); } /* 0%: المرحلة الأولى */
-  100% { transform:scale(1.04) translateY(-10px); } /* 100%: المرحلة الأخيرة */
+  0% { transform:scale(.98) translateY(0); }
+  100% { transform:scale(1.04) translateY(-10px); }
 }
 @keyframes orbPulse{
-  /* قاعدة تنسيق تستهدف @keyframes orbPulse */
-  0% { transform:scale(.96); filter:blur(2px) saturate(1.1); } /* 0%: المرحلة الأولى */
-  100% { transform:scale(1.06); filter:blur(1px) saturate(1.35); } /* 100%: المرحلة الأخيرة */
+  0% { transform:scale(.96); filter:blur(2px) saturate(1.1); }
+  100% { transform:scale(1.06); filter:blur(1px) saturate(1.35); }
 }
 @keyframes orbFloat{
-  /* قاعدة تنسيق تستهدف @keyframes orbFloat */
-  0% { transform:translate(-6px,0px); } /* 0%: المرحلة الأولى */
-  100% { transform:translate(8px,-10px); } /* 100%: المرحلة الأخيرة */
+  0% { transform:translate(-6px,0px); }
+  100% { transform:translate(8px,-10px); }
 }
 @keyframes gridDrift{
-  /* قاعدة تنسيق تستهدف @keyframes gridDrift */
-  0% { transform:perspective(600px) rotateX(65deg) translate3d(0,0,0); } /* 0%: المرحلة الأولى */
-  100% { transform:perspective(600px) rotateX(65deg) translate3d(-10px,-8px,0); } /* 100%: المرحلة الأخيرة */
+  0% { transform:perspective(600px) rotateX(65deg) translate3d(0,0,0); }
+  100% { transform:perspective(600px) rotateX(65deg) translate3d(-10px,-8px,0); }
 }
 @keyframes imageFloat{
-  /* قاعدة تنسيق تستهدف @keyframes imageFloat */
-  0% { transform:translate3d(0,0,0) scale(1.01) rotate(-0.25deg); } /* 0%: المرحلة الأولى */
-  50% { transform:translate3d(-7px,-9px,0) scale(1.025) rotate(0.2deg); } /* 50%: المرحلة الوسطى */
-  100% { transform:translate3d(7px,-14px,0) scale(1.035) rotate(0.15deg); } /* 100%: المرحلة الأخيرة */
+  0% { transform:translate3d(0,0,0) scale(1.01) rotate(-0.25deg); }
+  50% { transform:translate3d(-7px,-9px,0) scale(1.025) rotate(0.2deg); }
+  100% { transform:translate3d(7px,-14px,0) scale(1.035) rotate(0.15deg); }
 }
 @keyframes sceneGlow{
-  /* قاعدة تنسيق تستهدف @keyframes sceneGlow */
-  0% { transform:scale(0.97) translateY(0); opacity:.8; } /* 0%: المرحلة الأولى */
-  100% { transform:scale(1.04) translateY(-10px); opacity:1; } /* 100%: المرحلة الأخيرة */
+  0% { transform:scale(0.97) translateY(0); opacity:.8; }
+  100% { transform:scale(1.04) translateY(-10px); opacity:1; }
 }
 
 .section{
-  /* قاعدة تنسيق تستهدف .section */
-  max-width:var(--max); /* max-width: أقصى عرض */
-  margin:auto; /* margin: المسافة الخارجية */
-  padding:120px max(6vw,70px); /* padding: المسافة الداخلية */
-  position:relative; /* position: طريقة تموضع العنصر */
+  max-width:var(--max);
+  margin:auto;
+  padding:120px max(6vw,70px);
+  position:relative;
 }
 .section-index{
-  /* قاعدة تنسيق تستهدف .section-index */
-  color:#bbb; /* color: لون النص */
-  letter-spacing:.25em; /* letter-spacing: المسافة بين الحروف */
+  color:#bbb;
+  letter-spacing:.25em;
 }
 .section-index:first-letter{
-  /* قاعدة تنسيق تستهدف .section-index:first-letter */
-  color:var(--red); /* color: لون النص */
+  color:var(--red);
 }
 .section h2{
-  /* قاعدة تنسيق تستهدف .section h2 */
-  font-size:clamp(48px,5vw,76px); /* font-size: حجم الخط */
-  margin:26px 0 28px; /* margin: المسافة الخارجية */
+  font-size:clamp(48px,5vw,76px);
+  margin:26px 0 28px;
 }
 .about{
-  /* قاعدة تنسيق تستهدف .about */
-  display:grid; /* display: طريقة ترتيب العنصر */
-  grid-template-columns:.9fr 1.1fr; /* grid-template-columns: عدد وأحجام أعمدة الشبكة */
-  gap:90px; /* gap: المسافة بين العناصر */
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:90px;
 }
 .section-heading>p:not(.section-index){
-  /* قاعدة تنسيق تستهدف .section-heading>p:not(.section-index) */
-  max-width:550px; /* max-width: أقصى عرض */
-  color:var(--muted); /* color: لون النص */
-  font-size:16px; /* font-size: حجم الخط */
-  line-height:1.8; /* line-height: ارتفاع السطر */
+  max-width:550px;
+  color:var(--muted);
+  font-size:16px;
+  line-height:1.8;
 }
 .inline-link{
-  /* قاعدة تنسيق تستهدف .inline-link */
-  display:inline-block; /* display: طريقة ترتيب العنصر */
-  margin-top:18px; /* margin-top: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  color:#ddd; /* color: لون النص */
-  border-bottom:1px solid var(--red); /* border-bottom: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  padding-bottom:7px; /* padding-bottom: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  font-size:13px; /* font-size: حجم الخط */
-  text-transform:uppercase; /* text-transform: تغيير شكل حروف النص */
-  letter-spacing:.08em; /* letter-spacing: المسافة بين الحروف */
+  display:inline-block;
+  margin-top:18px;
+  color:#ddd;
+  border-bottom:1px solid var(--red);
+  padding-bottom:7px;
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
 }
 .about-panel{
-  /* قاعدة تنسيق تستهدف .about-panel */
-  display:grid; /* display: طريقة ترتيب العنصر */
-  grid-template-columns:1.15fr .85fr; /* grid-template-columns: عدد وأحجام أعمدة الشبكة */
-  gap:24px; /* gap: المسافة بين العناصر */
-  align-items:center; /* align-items: المحاذاة على المحور العرضي */
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:24px;
+  align-items:center;
 }
 .terminal-card{
-  /* قاعدة تنسيق تستهدف .terminal-card */
-  border:1px solid #2b171a; /* border: حدود العنصر */
-  border-radius:24px; /* border-radius: تدوير الزوايا */
-  overflow:hidden; /* overflow: التعامل مع المحتوى الخارج عن الحدود */
-  background:linear-gradient(155deg,#130d0e,#090909); /* background: الخلفية */
-  box-shadow:0 24px 70px rgba(0,0,0,.5); /* box-shadow: ظل العنصر */
+  border:1px solid #2b171a;
+  border-radius:24px;
+  overflow:hidden;
+  background:linear-gradient(155deg,#130d0e,#090909);
+  box-shadow:0 24px 70px rgba(0,0,0,.5);
 }
 .terminal-bar{
-  /* قاعدة تنسيق تستهدف .terminal-bar */
-  height:49px; /* height: الارتفاع */
-  border-bottom:1px solid #28181a; /* border-bottom: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  display:flex; /* display: طريقة ترتيب العنصر */
-  align-items:center; /* align-items: المحاذاة على المحور العرضي */
-  padding:0 18px; /* padding: المسافة الداخلية */
-  gap:7px; /* gap: المسافة بين العناصر */
-  color:#606064; /* color: لون النص */
-  font-family:monospace; /* font-family: نوع الخط */
-  font-size:11px; /* font-size: حجم الخط */
+  height:49px;
+  border-bottom:1px solid #28181a;
+  display:flex;
+  align-items:center;
+  padding:0 18px;
+  gap:7px;
+  color:#606064;
+  font-family:monospace;
+  font-size:11px;
 }
 .terminal-bar i{
-  /* قاعدة تنسيق تستهدف .terminal-bar i */
-  width:8px; /* width: العرض */
-  height:8px; /* height: الارتفاع */
-  border-radius:50%; /* border-radius: تدوير الزوايا */
-  background:#3e292c; /* background: الخلفية */
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:#3e292c;
 }
 .terminal-bar i:first-child{
-  /* قاعدة تنسيق تستهدف .terminal-bar i:first-child */
-  background:var(--red); /* background: الخلفية */
+  background:var(--red);
 }
 .terminal-bar span{
-  /* قاعدة تنسيق تستهدف .terminal-bar span */
-  margin-left:auto; /* margin-left: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  margin-left:auto;
 }
 .terminal-body{
-  /* قاعدة تنسيق تستهدف .terminal-body */
-  padding:32px 28px; /* padding: المسافة الداخلية */
-  min-height:390px; /* min-height: أقل ارتفاع */
-  font:14px/1.65 ui-monospace,SFMono-Regular,Menlo,monospace; /* font: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  padding:32px 28px;
+  min-height:390px;
+  font:14px/1.65 ui-monospace,SFMono-Regular,Menlo,monospace;
 }
 .terminal-body p{
-  /* قاعدة تنسيق تستهدف .terminal-body p */
-  margin:0 0 7px; /* margin: المسافة الخارجية */
+  margin:0 0 7px;
 }
 .terminal-body b{
-  /* قاعدة تنسيق تستهدف .terminal-body b */
-  color:var(--red); /* color: لون النص */
+  color:var(--red);
 }
 .terminal-body .output{
-  /* قاعدة تنسيق تستهدف .terminal-body .output */
-  color:#89898e; /* color: لون النص */
-  margin:0 0 24px 17px; /* margin: المسافة الخارجية */
+  color:#89898e;
+  margin:0 0 24px 17px;
 }
 .terminal-body .accent{
-  /* قاعدة تنسيق تستهدف .terminal-body .accent */
-  color:#ddd; /* color: لون النص */
+  color:#ddd;
 }
 .caret{
-  /* قاعدة تنسيق تستهدف .caret */
-  color:var(--red); /* color: لون النص */
-  animation:blink 1s step-end infinite; /* animation: تشغيل حركة معرفة مسبقاً */
+  color:var(--red);
+  animation:blink 1s step-end infinite;
 }
 @keyframes blink{
-  /* تعريف مراحل الحركة المتكررة */
 50%{
-  /* قاعدة تنسيق تستهدف 50% */
-  opacity:0; /* opacity: درجة الشفافية */
+  opacity:0;
 }
 }
 .focus-list{
-  /* قاعدة تنسيق تستهدف .focus-list */
-  display:grid; /* display: طريقة ترتيب العنصر */
-  gap:14px; /* gap: المسافة بين العناصر */
+  display:grid;
+  gap:14px;
 }
 .focus-list article{
-  /* قاعدة تنسيق تستهدف .focus-list article */
-  display:grid; /* display: طريقة ترتيب العنصر */
-  grid-template-columns:38px 1fr; /* grid-template-columns: عدد وأحجام أعمدة الشبكة */
-  gap:14px; /* gap: المسافة بين العناصر */
-  padding:20px 0; /* padding: المسافة الداخلية */
-  border-bottom:1px solid var(--line); /* border-bottom: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  display:grid;
+  grid-template-columns:38px 1fr;
+  gap:14px;
+  padding:20px 0;
+  border-bottom:1px solid var(--line);
 }
 .focus-list article>span{
-  /* قاعدة تنسيق تستهدف .focus-list article>span */
-  color:var(--red); /* color: لون النص */
-  font-size:11px; /* font-size: حجم الخط */
-  padding-top:3px; /* padding-top: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  color:var(--red);
+  font-size:11px;
+  padding-top:3px;
 }
 .focus-list h3{
-  /* قاعدة تنسيق تستهدف .focus-list h3 */
-  margin:0 0 5px; /* margin: المسافة الخارجية */
-  font-size:15px; /* font-size: حجم الخط */
+  margin:0 0 5px;
+  font-size:15px;
 }
 .focus-list p{
-  /* قاعدة تنسيق تستهدف .focus-list p */
-  margin:0; /* margin: المسافة الخارجية */
-  color:#777; /* color: لون النص */
-  font-size:12px; /* font-size: حجم الخط */
-  line-height:1.5; /* line-height: ارتفاع السطر */
+  margin:0;
+  color:#777;
+  font-size:12px;
+  line-height:1.5;
 }
 
 .projects{
-  /* قاعدة تنسيق تستهدف .projects */
-  max-width:none; /* max-width: أقصى عرض */
-  background:#0b0b0c; /* background: الخلفية */
-  padding-left:max(6vw,calc((100vw - 1260px)/2)); /* padding-left: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  padding-right:max(6vw,calc((100vw - 1260px)/2)); /* padding-right: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  max-width:none;
+  background:#0b0b0c;
+  padding-left:max(6vw,calc((100vw - 1260px)/2));
+  padding-right:max(6vw,calc((100vw - 1260px)/2));
 }
 .section-top{
-  /* قاعدة تنسيق تستهدف .section-top */
-  display:grid; /* display: طريقة ترتيب العنصر */
-  grid-template-columns:1.25fr .75fr; /* grid-template-columns: عدد وأحجام أعمدة الشبكة */
-  gap:80px; /* gap: المسافة بين العناصر */
-  align-items:end; /* align-items: المحاذاة على المحور العرضي */
-  margin-bottom:55px; /* margin-bottom: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  display:grid;
+  grid-template-columns:1.25fr .75fr;
+  gap:80px;
+  align-items:end;
+  margin-bottom:55px;
 }
 .section-top>p{
-  /* قاعدة تنسيق تستهدف .section-top>p */
-  color:var(--muted); /* color: لون النص */
-  line-height:1.7; /* line-height: ارتفاع السطر */
-  max-width:420px; /* max-width: أقصى عرض */
-  padding-bottom:8px; /* padding-bottom: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  color:var(--muted);
+  line-height:1.7;
+  max-width:420px;
+  padding-bottom:8px;
 }
 .project-grid{
-  /* قاعدة تنسيق تستهدف .project-grid */
-  display:grid; /* display: طريقة ترتيب العنصر */
-  grid-template-columns:1.25fr 1fr 1fr; /* grid-template-columns: عدد وأحجام أعمدة الشبكة */
-  gap:18px; /* gap: المسافة بين العناصر */
+  display:grid;
+  grid-template-columns:1.25fr 1fr 1fr;
+  gap:18px;
 }
 .project-card{
-  /* قاعدة تنسيق تستهدف .project-card */
-  min-height:500px; /* min-height: أقل ارتفاع */
-  border:1px solid var(--line); /* border: حدود العنصر */
-  padding:32px; /* padding: المسافة الداخلية */
-  position:relative; /* position: طريقة تموضع العنصر */
-  overflow:hidden; /* overflow: التعامل مع المحتوى الخارج عن الحدود */
-  background:linear-gradient(150deg,#111112,#0b0b0c); /* background: الخلفية */
-  transition:transform .35s,border-color .35s; /* transition: انتقال ناعم عند تغير الخصائص */
+  min-height:500px;
+  border:1px solid var(--line);
+  padding:32px;
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(150deg,#111112,#0b0b0c);
+  transition:transform .35s,border-color .35s;
 }
 .project-card:before{
-  /* قاعدة تنسيق تستهدف .project-card:before */
-  content:""; /* content: محتوى العنصر الزائف */
-  position:absolute; /* position: طريقة تموضع العنصر */
-  inset:0; /* inset: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  background:radial-gradient(circle at 18% 18%,rgba(239,41,61,.16),transparent 28%),radial-gradient(circle at 75% 15%,rgba(239,41,61,.12),transparent 26%),radial-gradient(circle at 50% 100%,rgba(239,41,61,.08),transparent 38%); /* background: إضاءة منتظمة على كل بطاقة */
-  pointer-events:none; /* pointer-events: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  z-index:0; /* z-index: ترتيب الطبقات */
+  content:"";
+  position:absolute;
+  inset:0;
+  background:radial-gradient(circle at 18% 18%,rgba(239,41,61,.16),transparent 28%),radial-gradient(circle at 75% 15%,rgba(239,41,61,.12),transparent 26%),radial-gradient(circle at 50% 100%,rgba(239,41,61,.08),transparent 38%);
+  pointer-events:none;
+  z-index:0;
 }
 .project-card > *{
-  /* قاعدة تنسيق تستهدف .project-card > * */
-  position:relative; /* position: طريقة تموضع العنصر */
-  z-index:1; /* z-index: ترتيب الطبقات */
+  position:relative;
+  z-index:1;
 }
 .project-card:hover{
-  /* قاعدة تنسيق تستهدف .project-card:hover */
-  transform:translateY(-8px); /* transform: تحريك أو تدوير أو تغيير حجم العنصر بصرياً */
-  border-color:#6b222b; /* border-color: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  transform:translateY(-8px);
+  border-color:#6b222b;
 }
 .project-featured{
-  /* قاعدة تنسيق تستهدف .project-featured */
-  background:radial-gradient(circle at 80% 12%,rgba(239,41,61,.18),transparent 26%),linear-gradient(145deg,#170c0e,#0b0b0c); /* background: الخلفية */
+  background:radial-gradient(circle at 80% 12%,rgba(239,41,61,.18),transparent 26%),linear-gradient(145deg,#170c0e,#0b0b0c);
 }
 .project-number{
-  /* قاعدة تنسيق تستهدف .project-number */
-  position:absolute; /* position: طريقة تموضع العنصر */
-  right:25px; /* right: المسافة من اليمين */
-  top:25px; /* top: المسافة من الأعلى */
-  font-size:11px; /* font-size: حجم الخط */
-  color:#555; /* color: لون النص */
+  position:absolute;
+  right:25px;
+  top:25px;
+  font-size:11px;
+  color:#555;
 }
 .project-tag{
-  /* قاعدة تنسيق تستهدف .project-tag */
-  color:var(--red); /* color: لون النص */
-  text-transform:uppercase; /* text-transform: تغيير شكل حروف النص */
-  letter-spacing:.2em; /* letter-spacing: المسافة بين الحروف */
-  font-size:10px; /* font-size: حجم الخط */
-  margin-bottom:75px; /* margin-bottom: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  color:var(--red);
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  font-size:10px;
+  margin-bottom:75px;
 }
 .project-card h3{
-  /* قاعدة تنسيق تستهدف .project-card h3 */
-  font-size:34px; /* font-size: حجم الخط */
-  line-height:1.05; /* line-height: ارتفاع السطر */
-  text-transform:uppercase; /* text-transform: تغيير شكل حروف النص */
-  letter-spacing:-.04em; /* letter-spacing: المسافة بين الحروف */
-  margin:0 0 22px; /* margin: المسافة الخارجية */
+  font-size:34px;
+  line-height:1.05;
+  text-transform:uppercase;
+  letter-spacing:-.04em;
+  margin:0 0 22px;
 }
 .project-card p{
-  /* قاعدة تنسيق تستهدف .project-card p */
-  color:#89898e; /* color: لون النص */
-  line-height:1.7; /* line-height: ارتفاع السطر */
-  font-size:14px; /* font-size: حجم الخط */
+  color:#89898e;
+  line-height:1.7;
+  font-size:14px;
 }
 .project-card ul{
-  /* قاعدة تنسيق تستهدف .project-card ul */
-  list-style:none; /* list-style: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  padding:0; /* padding: المسافة الداخلية */
-  margin:25px 0; /* margin: المسافة الخارجية */
+  list-style:none;
+  padding:0;
+  margin:25px 0;
 }
 .project-card li{
-  /* قاعدة تنسيق تستهدف .project-card li */
-  font-size:12px; /* font-size: حجم الخط */
-  text-transform:uppercase; /* text-transform: تغيير شكل حروف النص */
-  letter-spacing:.08em; /* letter-spacing: المسافة بين الحروف */
-  color:#b3b3b5; /* color: لون النص */
-  padding:9px 0; /* padding: المسافة الداخلية */
-  border-bottom:1px solid #202022; /* border-bottom: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  color:#b3b3b5;
+  padding:9px 0;
+  border-bottom:1px solid #202022;
 }
 .project-card li:before{
-  /* قاعدة تنسيق تستهدف .project-card li:before */
-  content:"+"; /* content: محتوى العنصر الزائف */
-  color:var(--red); /* color: لون النص */
-  margin-right:9px; /* margin-right: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  content:"+";
+  color:var(--red);
+  margin-right:9px;
 }
 .project-card>a{
-  /* قاعدة تنسيق تستهدف .project-card>a */
-  position:absolute; /* position: طريقة تموضع العنصر */
-  left:32px; /* left: المسافة من اليسار */
-  bottom:28px; /* bottom: المسافة من الأسفل */
-  color:#ddd; /* color: لون النص */
-  font-size:12px; /* font-size: حجم الخط */
-  text-transform:uppercase; /* text-transform: تغيير شكل حروف النص */
-  letter-spacing:.09em; /* letter-spacing: المسافة بين الحروف */
+  position:absolute;
+  left:32px;
+  bottom:28px;
+  color:#ddd;
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.09em;
 }
 .project-mark{
-  /* قاعدة تنسيق تستهدف .project-mark */
-  position:absolute; /* position: طريقة تموضع العنصر */
-  right:-18px; /* right: المسافة من اليمين */
-  bottom:18px; /* bottom: المسافة من الأسفل */
-  font-size:32px; /* font-size: حجم الخط */
-  font-weight:900; /* font-weight: سماكة الخط */
-  color:#211416; /* color: لون النص */
-  transform:rotate(-90deg); /* transform: تحريك أو تدوير أو تغيير حجم العنصر بصرياً */
-  transform-origin:right bottom; /* transform-origin: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  position:absolute;
+  right:-18px;
+  bottom:18px;
+  font-size:32px;
+  font-weight:900;
+  color:#211416;
+  transform:rotate(-90deg);
+  transform-origin:right bottom;
 }
 .project-mark span{
-  /* قاعدة تنسيق تستهدف .project-mark span */
-  color:var(--red); /* color: لون النص */
+  color:var(--red);
 }
 
 .certifications{
-  /* قاعدة تنسيق تستهدف .certifications */
-  display:grid; /* display: طريقة ترتيب العنصر */
-  grid-template-columns:.75fr 1.25fr; /* grid-template-columns: عدد وأحجام أعمدة الشبكة */
-  gap:90px; /* gap: المسافة بين العناصر */
+  display:grid;
+  grid-template-columns:.75fr 1.25fr;
+  gap:90px;
 }
 .cert-intro>p:last-child{
-  /* قاعدة تنسيق تستهدف .cert-intro>p:last-child */
-  color:var(--muted); /* color: لون النص */
-  max-width:320px; /* max-width: أقصى عرض */
-  line-height:1.7; /* line-height: ارتفاع السطر */
+  color:var(--muted);
+  max-width:320px;
+  line-height:1.7;
 }
 .cert-list article{
-  /* قاعدة تنسيق تستهدف .cert-list article */
-  display:grid; /* display: طريقة ترتيب العنصر */
-  grid-template-columns:150px 1fr 35px; /* grid-template-columns: عدد وأحجام أعمدة الشبكة */
-  gap:25px; /* gap: المسافة بين العناصر */
-  align-items:center; /* align-items: المحاذاة على المحور العرضي */
-  padding:30px 0; /* padding: المسافة الداخلية */
-  border-top:1px solid var(--line); /* border-top: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  display:grid;
+  grid-template-columns:150px 1fr 35px;
+  gap:25px;
+  align-items:center;
+  padding:30px 0;
+  border-top:1px solid var(--line);
 }
 .cert-list article:last-child{
-  /* قاعدة تنسيق تستهدف .cert-list article:last-child */
-  border-bottom:1px solid var(--line); /* border-bottom: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  border-bottom:1px solid var(--line);
 }
 .cert-list h3{
-  /* قاعدة تنسيق تستهدف .cert-list h3 */
-  font-size:25px; /* font-size: حجم الخط */
-  margin:0 0 7px; /* margin: المسافة الخارجية */
+  font-size:25px;
+  margin:0 0 7px;
 }
 .cert-list p{
-  /* قاعدة تنسيق تستهدف .cert-list p */
-  color:#7d7d82; /* color: لون النص */
-  margin:0; /* margin: المسافة الخارجية */
-  font-size:13px; /* font-size: حجم الخط */
+  color:#7d7d82;
+  margin:0;
+  font-size:13px;
 }
 .cert-list article>span{
-  /* قاعدة تنسيق تستهدف .cert-list article>span */
-  color:#555; /* color: لون النص */
-  font-size:12px; /* font-size: حجم الخط */
+  color:#555;
+  font-size:12px;
 }
 .cert-status{
-  /* قاعدة تنسيق تستهدف .cert-status */
-  justify-self:start; /* justify-self: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  font-size:10px; /* font-size: حجم الخط */
-  text-transform:uppercase; /* text-transform: تغيير شكل حروف النص */
-  letter-spacing:.11em; /* letter-spacing: المسافة بين الحروف */
-  padding:8px 10px; /* padding: المسافة الداخلية */
-  border:1px solid #313135; /* border: حدود العنصر */
-  border-radius:2px; /* border-radius: تدوير الزوايا */
+  justify-self:start;
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.11em;
+  padding:8px 10px;
+  border:1px solid #313135;
+  border-radius:2px;
 }
 .cert-status.complete{
-  /* قاعدة تنسيق تستهدف .cert-status.complete */
-  color:#eee; /* color: لون النص */
-  border-color:#5e2229; /* border-color: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  color:#eee;
+  border-color:#5e2229;
 }
 .cert-status.progress{
-  /* قاعدة تنسيق تستهدف .cert-status.progress */
-  color:var(--red); /* color: لون النص */
+  color:var(--red);
 }
 
 .notes{
-  /* قاعدة تنسيق تستهدف .notes */
-  max-width:none; /* max-width: أقصى عرض */
-  background:#0b0b0c; /* background: الخلفية */
-  padding-left:max(6vw,calc((100vw - 1260px)/2)); /* padding-left: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  padding-right:max(6vw,calc((100vw - 1260px)/2)); /* padding-right: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  max-width:none;
+  background:#0b0b0c;
+  padding-left:max(6vw,calc((100vw - 1260px)/2));
+  padding-right:max(6vw,calc((100vw - 1260px)/2));
 }
 .notes-grid{
-  /* قاعدة تنسيق تستهدف .notes-grid */
-  display:grid; /* display: طريقة ترتيب العنصر */
-  grid-template-columns:repeat(3,1fr); /* grid-template-columns: عدد وأحجام أعمدة الشبكة */
-  gap:18px; /* gap: المسافة بين العناصر */
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
 }
 .notes-card{
-  /* قاعدة تنسيق تستهدف .notes-grid article */
-  min-height:340px; /* min-height: أقل ارتفاع */
-  display:flex; /* display: طريقة ترتيب العنصر */
-  flex-direction:column; /* flex-direction: اتجاه ترتيب العناصر */
-  background:#111112; /* background: الخلفية */
-  border:1px solid var(--line); /* border: حدود العنصر */
-  padding:30px; /* padding: المسافة الداخلية */
-  transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease; /* transition: انتقال ناعم عند تغير الخصائص */
+  min-height:340px;
+  display:flex;
+  flex-direction:column;
+  background:#111112;
+  border:1px solid var(--line);
+  padding:30px;
+  transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease;
 }
 .notes-card:hover{
-  /* قاعدة تنسيق تستهدف .notes-grid article:hover */
-  transform:translateY(-3px); /* transform: تحريك أو تدوير أو تغيير حجم العنصر بصرياً */
-  border-color:var(--red); /* border-color: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  box-shadow:0 12px 30px rgba(0,0,0,.18); /* box-shadow: ظل العنصر */
+  transform:translateY(-3px);
+  border-color:var(--red);
+  box-shadow:0 12px 30px rgba(0,0,0,.18);
 }
 .notes-card:hover .notes-card-icon{
-  box-shadow:0 0 16px rgba(239,41,61,.28); /* box-shadow: ظل العنصر */
+  box-shadow:0 0 16px rgba(239,41,61,.28);
 }
 .notes-card-top{
-  /* قاعدة تنسيق تستهدف .notes-grid span */
-  display:flex; /* display: طريقة ترتيب العنصر */
-  align-items:flex-start; /* align-items: المحاذاة على المحور العرضي */
-  justify-content:space-between; /* justify-content: توزيع العناصر على المحور الرئيسي */
-  margin-bottom:44px; /* margin-bottom: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  margin-bottom:44px;
 }
 .notes-card-icon{
-  /* قاعدة تنسيق تستهدف .notes-grid h3 */
-  font-size:23px; /* font-size: حجم الخط */
-  line-height:1.3; /* line-height: ارتفاع السطر */
-  margin:50px 0 32px; /* margin: المسافة الخارجية */
+  font-size:23px;
+  line-height:1.3;
+  margin:50px 0 32px;
 }
 .notes-card-icon{
   width:34px;
@@ -848,788 +741,668 @@ button{
   border:1px solid #72232d;
 }
 .notes-card-icon svg{
-  width:19px; /* width: العرض */
-  height:19px; /* height: الارتفاع */
-  fill:none; /* fill: تعبئة الرسم */
-  stroke:currentColor; /* stroke: لون حدود الرسم */
-  stroke-linecap:round; /* stroke-linecap: شكل نهاية الحد */
-  stroke-linejoin:round; /* stroke-linejoin: شكل اتصال الحدود */
-  stroke-width:1.4; /* stroke-width: سماكة الحد */
+  width:19px;
+  height:19px;
+  fill:none;
+  stroke:currentColor;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-width:1.4;
 }
 .notes-card-number{
-  color:#555; /* color: لون النص */
-  font-size:11px; /* font-size: حجم الخط */
-  letter-spacing:.1em; /* letter-spacing: المسافة بين الحروف */
+  color:#555;
+  font-size:11px;
+  letter-spacing:.1em;
 }
 .notes-card h3{
-  margin:0 0 16px; /* margin: المسافة الخارجية */
-  font-size:23px; /* font-size: حجم الخط */
-  line-height:1.12; /* line-height: ارتفاع السطر */
-  text-transform:uppercase; /* text-transform: تغيير شكل حروف النص */
-  letter-spacing:-.03em; /* letter-spacing: المسافة بين الحروف */
+  margin:0 0 16px;
+  font-size:23px;
+  line-height:1.12;
+  text-transform:uppercase;
+  letter-spacing:-.03em;
 }
 .notes-card>p{
-  margin:0; /* margin: المسافة الخارجية */
-  color:#8b8b90; /* color: لون النص */
-  font-size:13px; /* font-size: حجم الخط */
-  line-height:1.7; /* line-height: ارتفاع السطر */
-  max-width:34em; /* max-width: أقصى عرض */
+  margin:0;
+  color:#8b8b90;
+  font-size:13px;
+  line-height:1.7;
+  max-width:34em;
 }
 .notes-card-footer{
-  margin-top:auto; /* margin-top: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  padding-top:20px; /* padding-top: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  border-top:1px solid #2a2a2c; /* border-top: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  display:flex; /* display: طريقة ترتيب العنصر */
-  flex-direction:column; /* flex-direction: اتجاه ترتيب العناصر */
-  gap:8px; /* gap: المسافة بين العناصر */
+  margin-top:auto;
+  padding-top:20px;
+  border-top:1px solid #2a2a2c;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
 }
 .notes-card-footer span{
-  color:var(--red); /* color: لون النص */
-  text-transform:uppercase; /* text-transform: تغيير شكل حروف النص */
-  letter-spacing:.18em; /* letter-spacing: المسافة بين الحروف */
-  font-size:10px; /* font-size: حجم الخط */
+  color:var(--red);
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  font-size:10px;
 }
 .notes-card-footer strong{
-  color:#c5c5c8; /* color: لون النص */
-  font-size:12px; /* font-size: حجم الخط */
-  font-weight:600; /* font-weight: سماكة الخط */
-  line-height:1.5; /* line-height: ارتفاع السطر */
-  letter-spacing:.03em; /* letter-spacing: المسافة بين الحروف */
+  color:#c5c5c8;
+  font-size:12px;
+  font-weight:600;
+  line-height:1.5;
+  letter-spacing:.03em;
 }
 .notes h2 span{
-  color:var(--red); /* color: لون النص */
+  color:var(--red);
 }
 .contact{
-  text-align:center; /* text-align: محاذاة النص */
+  text-align:center;
 }
 .contact .section-index,
 .contact h2,
 .contact>p:not(.section-index){
-  text-align:center; /* text-align: محاذاة النص */
+  text-align:center;
 }
 .contact>p:not(.section-index){
-  margin-left:auto; /* margin-left: المسافة الخارجية من اليسار */
-  margin-right:auto; /* margin-right: المسافة الخارجية من اليمين */
+  margin-left:auto;
+  margin-right:auto;
 }
 .contact h2{
-  /* قاعدة تنسيق تستهدف .contact h2 */
-  position:relative; /* position: طريقة تموضع العنصر */
-  z-index:2; /* z-index: ترتيب الطبقات */
+  position:relative;
+  z-index:2;
 }
 .contact>p:not(.section-index){
-  /* قاعدة تنسيق تستهدف .contact>p:not(.section-index) */
-  color:var(--muted); /* color: لون النص */
-  font-size:16px; /* font-size: حجم الخط */
-  max-width:590px; /* max-width: أقصى عرض */
-  line-height:1.7; /* line-height: ارتفاع السطر */
-  position:relative; /* position: طريقة تموضع العنصر */
-  z-index:2; /* z-index: ترتيب الطبقات */
+  color:var(--muted);
+  font-size:16px;
+  max-width:590px;
+  line-height:1.7;
+  position:relative;
+  z-index:2;
 }
 .contact-orb{
-  /* قاعدة تنسيق تستهدف .contact-orb */
-  position:absolute; /* position: طريقة تموضع العنصر */
-  width:460px; /* width: العرض */
-  height:460px; /* height: الارتفاع */
-  border-radius:50%; /* border-radius: تدوير الزوايا */
-  background:radial-gradient(circle,#521018 0%,#1a090c 45%,transparent 70%); /* background: الخلفية */
-  filter:blur(5px); /* filter: تأثير بصري */
-  opacity:.6; /* opacity: درجة الشفافية */
+  position:absolute;
+  width:min(460px,calc(100% - 48px));
+  aspect-ratio:1;
+  border-radius:50%;
+  background:radial-gradient(circle,#521018 0%,#1a090c 45%,transparent 70%);
+  filter:blur(5px);
+  opacity:.6;
 }
 .contact-cta{
-  /* قاعدة تنسيق تستهدف .contact-cta */
-  position:relative; /* position: طريقة تموضع العنصر */
-  z-index:2; /* z-index: ترتيب الطبقات */
-  margin-top:32px; /* margin-top: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  width:min(100%,430px); /* width: العرض */
-  display:flex; /* display: طريقة ترتيب العنصر */
-  justify-content:space-between; /* justify-content: توزيع العناصر على المحور الرئيسي */
-  align-items:center; /* align-items: المحاذاة على المحور العرضي */
-  padding:20px 26px; /* padding: المسافة الداخلية */
-  border:1px solid #603139; /* border: حدود العنصر */
-  border-radius:99px; /* border-radius: تدوير الزوايا */
-  text-transform:uppercase; /* text-transform: تغيير شكل حروف النص */
-  letter-spacing:.12em; /* letter-spacing: المسافة بين الحروف */
-  font-size:12px; /* font-size: حجم الخط */
-  transition:.3s; /* transition: انتقال ناعم عند تغير الخصائص */
+  position:relative;
+  z-index:2;
+  margin-top:32px;
+  width:min(100%,430px);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 26px;
+  border:1px solid #603139;
+  border-radius:99px;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  font-size:12px;
+  transition:.3s;
 }
 .contact-cta b{
-  /* قاعدة تنسيق تستهدف .contact-cta b */
-  font-size:20px; /* font-size: حجم الخط */
-  color:var(--red); /* color: لون النص */
+  font-size:20px;
+  color:var(--red);
 }
 .contact-cta:hover{
-  /* قاعدة تنسيق تستهدف .contact-cta:hover */
-  background:var(--red); /* background: الخلفية */
-  border-color:var(--red); /* border-color: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  background:var(--red);
+  border-color:var(--red);
 }
 .contact-cta:hover b{
-  /* قاعدة تنسيق تستهدف .contact-cta:hover b */
-  color:#fff; /* color: لون النص */
+  color:#fff;
 }
 footer{
-  /* قاعدة تنسيق تستهدف footer */
-  height:110px; /* height: الارتفاع */
-  max-width:var(--max); /* max-width: أقصى عرض */
-  margin:auto; /* margin: المسافة الخارجية */
-  padding:0 42px; /* padding: المسافة الداخلية */
-  display:flex; /* display: طريقة ترتيب العنصر */
-  align-items:center; /* align-items: المحاذاة على المحور العرضي */
-  justify-content:space-between; /* justify-content: توزيع العناصر على المحور الرئيسي */
-  border-top:1px solid var(--line); /* border-top: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  color:#777; /* color: لون النص */
-  font-size:11px; /* font-size: حجم الخط */
-  text-transform:uppercase; /* text-transform: تغيير شكل حروف النص */
-  letter-spacing:.08em; /* letter-spacing: المسافة بين الحروف */
+  height:110px;
+  max-width:var(--max);
+  margin:auto;
+  padding:0 42px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-top:1px solid var(--line);
+  color:#777;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
 }
 footer .logo{
-  /* قاعدة تنسيق تستهدف footer .logo */
-  color:#fff; /* color: لون النص */
+  color:#fff;
 }
 footer>a:last-child:hover{
-  /* قاعدة تنسيق تستهدف footer>a:last-child:hover */
-  color:var(--red); /* color: لون النص */
+  color:var(--red);
 }
 
-.reveal{
-  /* قاعدة تنسيق تستهدف .reveal */
-  opacity:0; /* opacity: درجة الشفافية */
-  transform:translateY(28px); /* transform: تحريك أو تدوير أو تغيير حجم العنصر بصرياً */
-  transition:opacity .75s ease,transform .75s ease; /* transition: انتقال ناعم عند تغير الخصائص */
+.reveal.reveal-pending{
+  opacity:0;
+  transform:translateY(28px);
+  transition:opacity .75s ease,transform .75s ease;
 }
-.reveal.visible{
-  /* قاعدة تنسيق تستهدف .reveal.visible */
-  opacity:1; /* opacity: درجة الشفافية */
-  transform:none; /* transform: تحريك أو تدوير أو تغيير حجم العنصر بصرياً */
+.reveal.reveal-pending.visible{
+  opacity:1;
+  transform:none;
 }
 
 @media(max-width:1100px){
-  /* شرط لتغيير التصميم حسب حجم الشاشة أو تفضيل تقليل الحركة */
 .site-header{
-  /* قاعدة تنسيق تستهدف .site-header */
-  padding:0 24px; /* padding: المسافة الداخلية */
+  padding:0 24px;
 }
 .site-header nav{
-  /* قاعدة تنسيق تستهدف .site-header nav */
-  gap:22px; /* gap: المسافة بين العناصر */
+  gap:22px;
 }
 .hero{
-  /* قاعدة تنسيق تستهدف .hero */
-  min-height:820px; /* min-height: أقل ارتفاع */
+  min-height:820px;
 }
 .hero-copy{
-  /* قاعدة تنسيق تستهدف .hero-copy */
-  padding-left:45px; /* padding-left: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  width:58%; /* width: العرض */
+  padding-left:45px;
+  width:58%;
 }
 .hero-visual{
-  /* قاعدة تنسيق تستهدف .hero-visual */
-  left:44%; /* left: المسافة من اليسار */
+  left:44%;
 }
 .hero-visual img{
-  /* قاعدة تنسيق تستهدف .hero-visual img */
-  right:-15%; /* right: المسافة من اليمين */
-  opacity:.78; /* opacity: درجة الشفافية */
+  right:-15%;
+  opacity:.78;
 }
 .side-words{
-  /* قاعدة تنسيق تستهدف .side-words */
-  display:none; /* display: طريقة ترتيب العنصر */
+  display:none;
 }
 .section{
-  /* قاعدة تنسيق تستهدف .section */
-  padding:90px 45px; /* padding: المسافة الداخلية */
+  padding:90px 45px;
 }
 .about{
-  /* قاعدة تنسيق تستهدف .about */
-  grid-template-columns:1fr; /* grid-template-columns: عدد وأحجام أعمدة الشبكة */
+  grid-template-columns:1fr;
 }
 .about-panel{
-  /* قاعدة تنسيق تستهدف .about-panel */
-  max-width:850px; /* max-width: أقصى عرض */
+  max-width:850px;
 }
 .project-grid{
-  /* قاعدة تنسيق تستهدف .project-grid */
-  grid-template-columns:1fr 1fr; /* grid-template-columns: عدد وأحجام أعمدة الشبكة */
+  grid-template-columns:1fr 1fr;
 }
 .project-featured{
-  /* قاعدة تنسيق تستهدف .project-featured */
-  grid-column:span 2; /* grid-column: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  grid-column:span 2;
 }
 .certifications{
-  /* قاعدة تنسيق تستهدف .certifications */
-  grid-template-columns:1fr; /* grid-template-columns: عدد وأحجام أعمدة الشبكة */
+  grid-template-columns:1fr;
 }
 .notes-grid{
-  /* قاعدة تنسيق تستهدف .notes-grid */
-  grid-template-columns:1fr 1fr; /* grid-template-columns: عدد وأحجام أعمدة الشبكة */
+  grid-template-columns:1fr 1fr;
 }
 .notes-grid article:last-child{
-  /* قاعدة تنسيق تستهدف .notes-grid article:last-child */
-  grid-column:auto; /* grid-column: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  grid-column:auto;
 }
 }
 
 @media(max-width:760px){
-  /* شرط لتغيير التصميم حسب حجم الشاشة أو تفضيل تقليل الحركة */
 html{
-  /* قاعدة تنسيق تستهدف html */
-  scroll-padding-top:70px; /* scroll-padding-top: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  scroll-padding-top:70px;
 }
 .cursor-glow{
-  /* قاعدة تنسيق تستهدف .cursor-glow */
-  display:none; /* display: طريقة ترتيب العنصر */
+  display:none;
 }
 .site-header{
-  /* قاعدة تنسيق تستهدف .site-header */
-  height:70px; /* height: الارتفاع */
-  position:fixed; /* position: طريقة تموضع العنصر */
-  background:rgba(8,8,8,.9); /* background: الخلفية */
-  backdrop-filter:blur(14px); /* backdrop-filter: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  border-bottom:1px solid #1c1c1d; /* border-bottom: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  height:70px;
+  position:fixed;
+  background:rgba(8,8,8,.9);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid #1c1c1d;
 }
 .logo{
-  /* قاعدة تنسيق تستهدف .logo */
-  font-size:25px; /* font-size: حجم الخط */
+  font-size:25px;
 }
 .contact-pill{
-  /* قاعدة تنسيق تستهدف .contact-pill */
-  display:none; /* display: طريقة ترتيب العنصر */
+  display:none;
 }
 .menu-button{
-  /* قاعدة تنسيق تستهدف .menu-button */
-  display:block; /* display: طريقة ترتيب العنصر */
-  position:relative; /* position: طريقة تموضع العنصر */
-  z-index:3; /* z-index: ترتيب الطبقات */
+  display:block;
+  position:relative;
+  z-index:3;
 }
 .site-header nav{
-  /* قاعدة تنسيق تستهدف .site-header nav */
-  position:fixed; /* position: طريقة تموضع العنصر */
-  inset:70px 0 auto; /* inset: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  background:#0a0a0b; /* background: الخلفية */
-  padding:15px 24px 28px; /* padding: المسافة الداخلية */
-  display:flex; /* display: طريقة ترتيب العنصر */
-  flex-direction:column; /* flex-direction: اتجاه ترتيب العناصر */
-  align-items:stretch; /* align-items: المحاذاة على المحور العرضي */
-  gap:0; /* gap: المسافة بين العناصر */
-  border-bottom:1px solid #28282a; /* border-bottom: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  transform:translateY(-130%); /* transform: تحريك أو تدوير أو تغيير حجم العنصر بصرياً */
-  transition:.35s; /* transition: انتقال ناعم عند تغير الخصائص */
-  z-index:-1; /* z-index: ترتيب الطبقات */
+  position:fixed;
+  inset:70px 0 auto;
+  background:#0a0a0b;
+  padding:15px 24px 28px;
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+  gap:0;
+  border-bottom:1px solid #28282a;
+  transform:translateY(-130%);
+  transition:.35s;
+  z-index:-1;
 }
 .site-header nav.open{
-  /* قاعدة تنسيق تستهدف .site-header nav.open */
-  transform:none; /* transform: تحريك أو تدوير أو تغيير حجم العنصر بصرياً */
+  transform:none;
 }
 .site-header nav a{
-  /* قاعدة تنسيق تستهدف .site-header nav a */
-  padding:15px 0; /* padding: المسافة الداخلية */
-  font-size:14px; /* font-size: حجم الخط */
+  padding:15px 0;
+  font-size:14px;
 }
 .site-header nav a:after{
-  /* قاعدة تنسيق تستهدف .site-header nav a:after */
-  bottom:7px; /* bottom: المسافة من الأسفل */
+  bottom:7px;
 }
 .hero{
-  /* قاعدة تنسيق تستهدف .hero */
-  min-height:840px; /* min-height: أقل ارتفاع */
-  padding-top:70px; /* padding-top: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  min-height:840px;
+  padding-top:70px;
 }
 .hero-copy{
-  /* قاعدة تنسيق تستهدف .hero-copy */
-  width:100%; /* width: العرض */
-  padding:75px 24px 30px; /* padding: المسافة الداخلية */
+  width:100%;
+  padding:75px 24px 30px;
 }
 .hero h1{
-  /* قاعدة تنسيق تستهدف .hero h1 */
-  font-size:clamp(53px,16vw,78px); /* font-size: حجم الخط */
-  position:relative; /* position: طريقة تموضع العنصر */
-  z-index:6; /* z-index: ترتيب الطبقات */
+  font-size:clamp(53px,16vw,78px);
+  position:relative;
+  z-index:6;
 }
 .eyebrow{
-  /* قاعدة تنسيق تستهدف .eyebrow */
-  font-size:10px; /* font-size: حجم الخط */
+  font-size:10px;
 }
 .hero-text{
-  /* قاعدة تنسيق تستهدف .hero-text */
-  font-size:15px; /* font-size: حجم الخط */
-  max-width:90%; /* max-width: أقصى عرض */
-  position:relative; /* position: طريقة تموضع العنصر */
-  z-index:7; /* z-index: ترتيب الطبقات */
+  font-size:15px;
+  max-width:90%;
+  position:relative;
+  z-index:7;
 }
 .hero-actions{
-  /* قاعدة تنسيق تستهدف .hero-actions */
-  position:relative; /* position: طريقة تموضع العنصر */
-  z-index:8; /* z-index: ترتيب الطبقات */
+  position:relative;
+  z-index:8;
 }
 .round-arrow{
-  /* قاعدة تنسيق تستهدف .round-arrow */
-  width:62px; /* width: العرض */
-  height:62px; /* height: الارتفاع */
+  width:62px;
+  height:62px;
 }
 .text-link i{
-  /* قاعدة تنسيق تستهدف .text-link i */
-  width:28px; /* width: العرض */
+  width:28px;
 }
 .hero-proof{
-  /* قاعدة تنسيق تستهدف .hero-proof */
-  margin-top:55px; /* margin-top: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  gap:10px; /* gap: المسافة بين العناصر */
-  position:relative; /* position: طريقة تموضع العنصر */
-  z-index:8; /* z-index: ترتيب الطبقات */
+  margin-top:55px;
+  gap:10px;
+  position:relative;
+  z-index:8;
 }
 .hero-proof div{
-  /* قاعدة تنسيق تستهدف .hero-proof div */
-  display:flex; /* display: طريقة ترتيب العنصر */
-  flex-direction:column; /* flex-direction: اتجاه ترتيب العناصر */
-  gap:7px; /* gap: المسافة بين العناصر */
+  display:flex;
+  flex-direction:column;
+  gap:7px;
 }
 .hero-proof span{
-  /* قاعدة تنسيق تستهدف .hero-proof span */
-  font-size:9px; /* font-size: حجم الخط */
+  font-size:9px;
 }
 .hero-visual{
-  /* قاعدة تنسيق تستهدف .hero-visual */
-  inset:auto -80px 0 22%; /* inset: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  height:520px; /* height: الارتفاع */
+  inset:auto -80px 0 22%;
+  height:520px;
 }
 .hero-visual:after{
-  /* قاعدة تنسيق تستهدف .hero-visual:after */
-  content:""; /* content: محتوى العنصر الزائف */
-  position:absolute; /* position: طريقة تموضع العنصر */
-  inset:0; /* inset: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  z-index:5; /* z-index: ترتيب الطبقات */
-  background:linear-gradient(to bottom,rgba(8,8,8,.8),transparent 32%,rgba(8,8,8,.15)); /* background: الخلفية */
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:5;
+  background:linear-gradient(to bottom,rgba(8,8,8,.8),transparent 32%,rgba(8,8,8,.15));
 }
 .hero-visual img{
-  /* قاعدة تنسيق تستهدف .hero-visual img */
-  height:520px; /* height: الارتفاع */
-  right:-10px; /* right: المسافة من اليمين */
-  bottom:-5px; /* bottom: المسافة من الأسفل */
-  opacity:.7; /* opacity: درجة الشفافية */
+  height:520px;
+  right:-10px;
+  bottom:-5px;
+  opacity:.7;
 }
 .orb-main{
-  /* قاعدة تنسيق تستهدف .orb-main */
-  width:360px; /* width: العرض */
-  height:360px; /* height: الارتفاع */
-  right:0; /* right: المسافة من اليمين */
-  top:70px; /* top: المسافة من الأعلى */
+  width:360px;
+  height:360px;
+  right:0;
+  top:70px;
 }
 .orb-small,.grid-sphere,.scroll-cue{
-  /* قاعدة تنسيق تستهدف .orb-small,.grid-sphere,.scroll-cue */
-  display:none; /* display: طريقة ترتيب العنصر */
+  display:none;
 }
 .section{
-  /* قاعدة تنسيق تستهدف .section */
-  padding:80px 24px; /* padding: المسافة الداخلية */
+  padding:80px 24px;
 }
 .section h2{
-  /* قاعدة تنسيق تستهدف .section h2 */
-  font-size:48px; /* font-size: حجم الخط */
+  font-size:48px;
 }
 .about-panel{
-  /* قاعدة تنسيق تستهدف .about-panel */
-  grid-template-columns:1fr; /* grid-template-columns: عدد وأحجام أعمدة الشبكة */
+  grid-template-columns:1fr;
 }
 .terminal-body{
-  /* قاعدة تنسيق تستهدف .terminal-body */
-  min-height:340px; /* min-height: أقل ارتفاع */
+  min-height:340px;
 }
 .section-top{
-  /* قاعدة تنسيق تستهدف .section-top */
-  grid-template-columns:1fr; /* grid-template-columns: عدد وأحجام أعمدة الشبكة */
-  gap:10px; /* gap: المسافة بين العناصر */
+  grid-template-columns:1fr;
+  gap:10px;
 }
 .project-grid{
-  /* قاعدة تنسيق تستهدف .project-grid */
-  grid-template-columns:1fr; /* grid-template-columns: عدد وأحجام أعمدة الشبكة */
+  grid-template-columns:1fr;
 }
 .project-featured{
-  /* قاعدة تنسيق تستهدف .project-featured */
-  grid-column:auto; /* grid-column: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  grid-column:auto;
 }
 .project-card{
-  /* قاعدة تنسيق تستهدف .project-card */
-  min-height:460px; /* min-height: أقل ارتفاع */
+  min-height:460px;
 }
 .cert-list article{
-  /* قاعدة تنسيق تستهدف .cert-list article */
-  grid-template-columns:1fr 34px; /* grid-template-columns: عدد وأحجام أعمدة الشبكة */
-  gap:10px; /* gap: المسافة بين العناصر */
+  grid-template-columns:1fr 34px;
+  gap:10px;
 }
 .cert-status{
-  /* قاعدة تنسيق تستهدف .cert-status */
-  grid-column:1; /* grid-column: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  grid-column:1;
 }
 .cert-list article>span{
-  /* قاعدة تنسيق تستهدف .cert-list article>span */
-  grid-column:2; /* grid-column: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  grid-row:1; /* grid-row: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  grid-column:2;
+  grid-row:1;
 }
 .notes-grid{
-  /* قاعدة تنسيق تستهدف .notes-grid */
-  grid-template-columns:1fr; /* grid-template-columns: عدد وأحجام أعمدة الشبكة */
+  grid-template-columns:1fr;
 }
 .notes-grid article:last-child{
-  /* قاعدة تنسيق تستهدف .notes-grid article:last-child */
-  grid-column:auto; /* grid-column: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  grid-column:auto;
 }
 .notes-grid article{
-  /* قاعدة تنسيق تستهدف .notes-grid article */
-  min-height:230px; /* min-height: أقل ارتفاع */
+  min-height:230px;
 }
 .notes-grid h3{
-  /* قاعدة تنسيق تستهدف .notes-grid h3 */
-  margin-top:35px; /* margin-top: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  margin-top:35px;
 }
 .contact{
-  /* قاعدة تنسيق تستهدف .contact */
-  min-height:600px; /* min-height: أقل ارتفاع */
+  min-height:600px;
 }
 footer{
-  /* قاعدة تنسيق تستهدف footer */
-  height:auto; /* height: الارتفاع */
-  min-height:180px; /* min-height: أقل ارتفاع */
-  padding:35px 24px; /* padding: المسافة الداخلية */
-  flex-direction:column; /* flex-direction: اتجاه ترتيب العناصر */
-  gap:20px; /* gap: المسافة بين العناصر */
-  text-align:center; /* text-align: محاذاة النص */
+  height:auto;
+  min-height:180px;
+  padding:35px 24px;
+  flex-direction:column;
+  gap:20px;
+  text-align:center;
 }
 }
 
 @media(prefers-reduced-motion:reduce){
-  /* شرط لتغيير التصميم حسب حجم الشاشة أو تفضيل تقليل الحركة */
 html{
-  /* قاعدة تنسيق تستهدف html */
-  scroll-behavior:auto; /* scroll-behavior: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  scroll-behavior:auto;
 }
-.reveal{
-  /* قاعدة تنسيق تستهدف .reveal */
-  opacity:1; /* opacity: درجة الشفافية */
-  transform:none; /* transform: تحريك أو تدوير أو تغيير حجم العنصر بصرياً */
-  transition:none; /* transition: انتقال ناعم عند تغير الخصائص */
+.reveal.reveal-pending{
+  opacity:1;
+  transform:none;
+  transition:none;
 }
 .caret{
-  /* قاعدة تنسيق تستهدف .caret */
-  animation:none; /* animation: تشغيل حركة معرفة مسبقاً */
+  animation:none;
 }
 .round-arrow,.project-card,.notes-card,.site-header{
-  /* قاعدة تنسيق تستهدف .round-arrow,.project-card */
-  transition:none; /* transition: انتقال ناعم عند تغير الخصائص */
+  transition:none;
 }
 }
 
-
-/* Mohamed's personal profile additions */
 .life-score{
-  /* قاعدة تنسيق تستهدف .life-score */
-  margin:15px 0 0; /* margin: المسافة الخارجية */
-  color:#7f7f84; /* color: لون النص */
-  font:600 12px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace; /* font: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  text-transform:uppercase; /* text-transform: تغيير شكل حروف النص */
-  letter-spacing:.12em; /* letter-spacing: المسافة بين الحروف */
+  margin:15px 0 0;
+  color:#7f7f84;
+  font:600 12px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;
+  text-transform:uppercase;
+  letter-spacing:.12em;
 }
 .life-score span{
-  /* قاعدة تنسيق تستهدف .life-score span */
-  color:var(--red); /* color: لون النص */
-  font-size:16px; /* font-size: حجم الخط */
+  color:var(--red);
+  font-size:16px;
 }
 .hero-actions{
-  /* قاعدة تنسيق تستهدف .hero-actions */
-  margin-top:32px; /* margin-top: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  margin-top:32px;
 }
 .hero-visual{
-  /* قاعدة تنسيق تستهدف .hero-visual */
-  display:flex; /* display: طريقة ترتيب العنصر */
-  align-items:center; /* align-items: المحاذاة على المحور العرضي */
-  justify-content:flex-end; /* justify-content: توزيع العناصر على المحور الرئيسي */
-  padding-right:2%; /* padding-right: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  padding-right:2%;
 }
 .hero-visual img{
-  /* قاعدة تنسيق تستهدف .hero-visual img */
-  position:relative; /* position: طريقة تموضع العنصر */
-  width:min(760px,60vw); /* width: العرض */
-  height:auto; /* height: الارتفاع */
-  max-height:none; /* max-height: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  right:auto; /* right: المسافة من اليمين */
-  bottom:auto; /* bottom: المسافة من الأسفل */
-  filter:drop-shadow(-16px 24px 46px #000); /* filter: تأثير بصري */
-  mask-image:linear-gradient(90deg,transparent 0,#000 12%,#000 100%); /* mask-image: قناع يتحكم بأجزاء الصورة الظاهرة */
+  position:relative;
+  width:min(760px,60vw);
+  height:auto;
+  max-height:none;
+  right:auto;
+  bottom:auto;
+  filter:drop-shadow(-16px 24px 46px #000);
+  mask-image:linear-gradient(90deg,transparent 0,#000 12%,#000 100%);
 }
 .hero-visual .orb,.hero-visual .grid-sphere,.hero-visual .side-words{
-  /* قاعدة تنسيق تستهدف .hero-visual .orb,.hero-visual .grid-sphere,.hero-visual .side-words */
-  display:none; /* display: طريقة ترتيب العنصر */
+  display:none;
 }
 .section-heading blockquote{
-  /* قاعدة تنسيق تستهدف .section-heading blockquote */
-  margin:28px 0 0; /* margin: المسافة الخارجية */
-  padding:0 0 0 20px; /* padding: المسافة الداخلية */
-  border-left:2px solid var(--red); /* border-left: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  color:#dedee0; /* color: لون النص */
-  font-size:17px; /* font-size: حجم الخط */
-  line-height:1.65; /* line-height: ارتفاع السطر */
+  margin:28px 0 0;
+  padding:0 0 0 20px;
+  border-left:2px solid var(--red);
+  color:#dedee0;
+  font-size:17px;
+  line-height:1.65;
 }
 .section-heading blockquote cite{
-  /* قاعدة تنسيق تستهدف .section-heading blockquote cite */
-  display:block; /* display: طريقة ترتيب العنصر */
-  margin-top:8px; /* margin-top: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  color:#777; /* color: لون النص */
-  font-size:11px; /* font-size: حجم الخط */
-  font-style:normal; /* font-style: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  text-transform:uppercase; /* text-transform: تغيير شكل حروف النص */
-  letter-spacing:.12em; /* letter-spacing: المسافة بين الحروف */
+  display:block;
+  margin-top:8px;
+  color:#777;
+  font-size:11px;
+  font-style:normal;
+  text-transform:uppercase;
+  letter-spacing:.12em;
 }
 .cert-list article{
-  /* قاعدة تنسيق تستهدف .cert-list article */
-  display:block; /* display: طريقة ترتيب العنصر */
-  padding:0; /* padding: المسافة الداخلية */
+  display:block;
+  padding:0;
 }
 .cert-row{
-  /* قاعدة تنسيق تستهدف .cert-row */
-  display:grid; /* display: طريقة ترتيب العنصر */
-  grid-template-columns:150px 1fr 35px; /* grid-template-columns: عدد وأحجام أعمدة الشبكة */
-  gap:25px; /* gap: المسافة بين العناصر */
-  align-items:center; /* align-items: المحاذاة على المحور العرضي */
-  padding:30px 0; /* padding: المسافة الداخلية */
+  display:grid;
+  grid-template-columns:150px 1fr 35px;
+  gap:25px;
+  align-items:center;
+  padding:30px 0;
 }
 .cert-row>span{
-  /* قاعدة تنسيق تستهدف .cert-row>span */
-  color:#555; /* color: لون النص */
-  font-size:12px; /* font-size: حجم الخط */
+  color:#555;
+  font-size:12px;
 }
 .cert-list a.cert-row{
-  /* قاعدة تنسيق تستهدف .cert-list a.cert-row */
-  transition:background .25s,padding .25s; /* transition: انتقال ناعم عند تغير الخصائص */
+  transition:background .25s,padding .25s;
 }
 .cert-list a.cert-row:hover{
-  /* قاعدة تنسيق تستهدف .cert-list a.cert-row:hover */
-  background:#100c0d; /* background: الخلفية */
-  padding-left:14px; /* padding-left: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  padding-right:14px; /* padding-right: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  background:#100c0d;
+  padding-left:14px;
+  padding-right:14px;
 }
 .progress-track{
-  /* قاعدة تنسيق تستهدف .progress-track */
-  height:3px; /* height: الارتفاع */
-  margin-top:14px; /* margin-top: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  background:#232326; /* background: الخلفية */
-  position:relative; /* position: طريقة تموضع العنصر */
-  overflow:visible; /* overflow: التعامل مع المحتوى الخارج عن الحدود */
+  height:3px;
+  margin-top:14px;
+  background:#232326;
+  position:relative;
+  overflow:visible;
 }
 .progress-track i{
-  /* قاعدة تنسيق تستهدف .progress-track i */
-  display:block; /* display: طريقة ترتيب العنصر */
-  height:100%; /* height: الارتفاع */
-  background:var(--red); /* background: الخلفية */
-  box-shadow:0 0 12px rgba(239,41,61,.6); /* box-shadow: ظل العنصر */
+  display:block;
+  height:100%;
+  background:var(--red);
+  box-shadow:0 0 12px rgba(239,41,61,.6);
 }
 .progress-track span{
-  position:absolute; /* position: طريقة تموضع العنصر */
-  left:100%; /* left: المسافة من اليسار */
-  top:50%; /* top: المسافة من الأعلى */
-  transform:translate(8px,-50%); /* transform: تحريك أو تدوير أو تغيير حجم العنصر بصرياً */
-  color:#777; /* color: لون النص */
-  font-size:11px; /* font-size: حجم الخط */
-  line-height:1; /* line-height: ارتفاع السطر */
-  white-space:nowrap; /* white-space: المسافات البيضاء ومنع الالتفاف */
+  position:absolute;
+  left:100%;
+  top:50%;
+  transform:translate(8px,-50%);
+  color:#777;
+  font-size:11px;
+  line-height:1;
+  white-space:nowrap;
 }
 .semester-track{
-  display:grid; /* display: طريقة ترتيب العنصر */
-  grid-template-columns:repeat(7,minmax(0,1fr)); /* grid-template-columns: عدد وأحجام أعمدة الشبكة */
-  gap:6px; /* gap: المسافة بين العناصر */
-  margin-top:14px; /* margin-top: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  display:grid;
+  grid-template-columns:repeat(7,minmax(0,1fr));
+  gap:6px;
+  margin-top:14px;
 }
 .semester-segment{
-  display:grid; /* display: طريقة ترتيب العنصر */
-  gap:6px; /* gap: المسافة بين العناصر */
-  justify-items:stretch; /* justify-items: المحاذاة على المحور الرئيسي */
+  display:grid;
+  gap:6px;
+  justify-items:stretch;
 }
 .semester-segment>span{
-  color:#777; /* color: لون النص */
-  font-size:10px; /* font-size: حجم الخط */
-  line-height:1; /* line-height: ارتفاع السطر */
-  text-align:center; /* text-align: محاذاة النص */
-  white-space:nowrap; /* white-space: المسافات البيضاء ومنع الالتفاف */
+  color:#777;
+  font-size:10px;
+  line-height:1;
+  text-align:center;
+  white-space:nowrap;
 }
 .semester-track i{
-  display:block; /* display: طريقة ترتيب العنصر */
-  height:5px; /* height: الارتفاع */
-  background:#29292c; /* background: الخلفية */
-  border:1px solid #3a3a3d; /* border: حدود العنصر */
-  transition:background .25s ease,box-shadow .25s ease; /* transition: انتقال ناعم عند تغير الخصائص */
+  display:block;
+  height:5px;
+  background:#29292c;
+  border:1px solid #3a3a3d;
+  transition:background .25s ease,box-shadow .25s ease;
 }
 .semester-track i.is-complete{
-  background:var(--red); /* background: الخلفية */
-  border-color:var(--red); /* border-color: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  box-shadow:0 0 12px rgba(239,41,61,.6); /* box-shadow: ظل العنصر */
+  background:var(--red);
+  border-color:var(--red);
+  box-shadow:0 0 12px rgba(239,41,61,.6);
 }
 .social-links{
-  /* قاعدة تنسيق تستهدف .social-links */
-  position:relative; /* position: طريقة تموضع العنصر */
-  z-index:2; /* z-index: ترتيب الطبقات */
-  margin:32px auto 0; /* margin: المسافة الخارجية */
-  width:min(100%,620px); /* width: العرض */
-  display:grid; /* display: طريقة ترتيب العنصر */
-  grid-template-columns:repeat(3,1fr); /* grid-template-columns: عدد وأحجام أعمدة الشبكة */
-  gap:10px; /* gap: المسافة بين العناصر */
+  position:relative;
+  z-index:2;
+  margin:32px auto 0;
+  width:min(100%,620px);
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
 }
 .social-links>a,.social-links>div{
-  /* قاعدة تنسيق تستهدف .social-links>a,.social-links>div */
-  min-height:76px; /* min-height: أقل ارتفاع */
-  display:flex; /* display: طريقة ترتيب العنصر */
-  justify-content:space-between; /* justify-content: توزيع العناصر على المحور الرئيسي */
-  align-items:center; /* align-items: المحاذاة على المحور العرضي */
-  padding:18px 20px; /* padding: المسافة الداخلية */
-  border:1px solid #603139; /* border: حدود العنصر */
-  border-radius:4px; /* border-radius: تدوير الزوايا */
-  text-transform:uppercase; /* text-transform: تغيير شكل حروف النص */
-  letter-spacing:.1em; /* letter-spacing: المسافة بين الحروف */
-  font-size:11px; /* font-size: حجم الخط */
-  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease, background .25s ease; /* transition: انتقال ناعم عند تغير الخصائص */
-  box-shadow:0 0 0 rgba(239,41,61,0); /* box-shadow: ظل العنصر */
-  position:relative; /* position: طريقة تموضع العنصر */
-  overflow:hidden; /* overflow: التعامل مع المحتوى الخارج عن الحدود */
+  min-height:76px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 20px;
+  border:1px solid #603139;
+  border-radius:4px;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  font-size:11px;
+  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease, background .25s ease;
+  box-shadow:0 0 0 rgba(239,41,61,0);
+  position:relative;
+  overflow:hidden;
 }
 .social-links>a:before{
-  content:""; /* content: محتوى العنصر الزائف */
-  position:absolute; /* position: طريقة تموضع العنصر */
-  inset:0 auto 0 -120%; /* inset: خاصية تحدد المسافات من حواف العنصر */
-  width:70%; /* width: العرض */
-  background:linear-gradient(105deg,transparent,rgba(255,255,255,.22),transparent); /* background: الخلفية */
-  transform:skewX(-18deg); /* transform: تحريك أو تدوير أو تغيير حجم العنصر بصرياً */
-  transition:left .5s ease; /* transition: انتقال ناعم عند تغير الخصائص */
-  pointer-events:none; /* pointer-events: خاصية تتحكم باستقبال النقرات */
+  content:"";
+  position:absolute;
+  inset:0 auto 0 -120%;
+  width:70%;
+  background:linear-gradient(105deg,transparent,rgba(255,255,255,.22),transparent);
+  transform:skewX(-18deg);
+  transition:left .5s ease;
+  pointer-events:none;
 }
 .social-label{
-  /* قاعدة تنسيق تستهدف .social-label */
-  display:flex; /* display: طريقة ترتيب العنصر */
-  align-items:center; /* align-items: المحاذاة على المحور العرضي */
-  gap:10px; /* gap: المسافة بين العناصر */
+  display:flex;
+  align-items:center;
+  gap:10px;
 }
 .social-label svg{
-  /* قاعدة تنسيق تستهدف .social-label svg */
-  width:20px; /* width: العرض */
-  height:20px; /* height: الارتفاع */
-  fill:currentColor; /* fill: لون الشكل */
-  flex-shrink:0; /* flex-shrink: منع تقلص العنصر */
-  transition:transform .25s ease; /* transition: انتقال ناعم عند تغير الخصائص */
+  width:20px;
+  height:20px;
+  fill:currentColor;
+  flex-shrink:0;
+  transition:transform .25s ease;
 }
 .social-label svg.github-mark{
-  fill:none; /* fill: لون الشكل */
-  stroke:currentColor; /* stroke: لون حدود الشكل */
-  stroke-width:1.8; /* stroke-width: سماكة حدود الشكل */
-  stroke-linecap:round; /* stroke-linecap: شكل أطراف الخط */
-  stroke-linejoin:round; /* stroke-linejoin: شكل زوايا الخط */
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
 }
 .social-links b{
-  /* قاعدة تنسيق تستهدف .social-links b */
-  color:var(--red); /* color: لون النص */
-  font-size:13px; /* font-size: حجم الخط */
+  color:var(--red);
+  font-size:13px;
 }
 .social-links>a:hover{
-  /* قاعدة تنسيق تستهدف .social-links>a:hover */
-  background:var(--red); /* background: الخلفية */
-  border-color:var(--red); /* border-color: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  transform:translateY(-7px) scale(1.025); /* transform: تحريك أو تدوير أو تغيير حجم العنصر بصرياً */
-  box-shadow:0 14px 32px rgba(239,41,61,.3),0 0 18px rgba(239,41,61,.18); /* box-shadow: ظل العنصر */
+  background:var(--red);
+  border-color:var(--red);
+  transform:translateY(-7px) scale(1.025);
+  box-shadow:0 14px 32px rgba(239,41,61,.3),0 0 18px rgba(239,41,61,.18);
 }
 .social-links>a:hover:before{
-  left:135%; /* left: المسافة من اليسار */
+  left:135%;
 }
 .social-links>a:hover .social-label svg{
-  transform:translateX(3px) rotate(-8deg) scale(1.12); /* transform: تحريك أو تدوير أو تغيير حجم العنصر بصرياً */
+  transform:translateX(3px) rotate(-8deg) scale(1.12);
 }
 .social-links>a:hover b{
-  /* قاعدة تنسيق تستهدف .social-links>a:hover b */
-  color:white; /* color: لون النص */
-  transform:translateX(4px); /* transform: تحريك أو تدوير أو تغيير حجم العنصر بصرياً */
+  color:white;
+  transform:translateX(4px);
 }
 .social-links>div{
-  /* قاعدة تنسيق تستهدف .social-links>div */
-  flex-direction:column; /* flex-direction: اتجاه ترتيب العناصر */
-  align-items:flex-start; /* align-items: المحاذاة على المحور العرضي */
-  justify-content:center; /* justify-content: توزيع العناصر على المحور الرئيسي */
-  gap:8px; /* gap: المسافة بين العناصر */
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+  gap:8px;
 }
 .social-links>div b{
-  /* قاعدة تنسيق تستهدف .social-links>div b */
-  text-transform:none; /* text-transform: تغيير شكل حروف النص */
-  letter-spacing:.05em; /* letter-spacing: المسافة بين الحروف */
+  text-transform:none;
+  letter-spacing:.05em;
 }
-
 
 @media(max-width:1100px){
-  /* شرط لتغيير التصميم حسب حجم الشاشة أو تفضيل تقليل الحركة */
 .hero-visual{
-  /* قاعدة تنسيق تستهدف .hero-visual */
-  left:46%; /* left: المسافة من اليسار */
-  padding-right:0; /* padding-right: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  left:46%;
+  padding-right:0;
 }
 .hero-visual img{
-  /* قاعدة تنسيق تستهدف .hero-visual img */
-  width:720px; /* width: العرض */
-  max-width:none; /* max-width: أقصى عرض */
-  opacity:.78; /* opacity: درجة الشفافية */
+  width:720px;
+  max-width:none;
+  opacity:.78;
 }
 .cert-row{
-  /* قاعدة تنسيق تستهدف .cert-row */
-  grid-template-columns:150px 1fr 35px; /* grid-template-columns: عدد وأحجام أعمدة الشبكة */
+  grid-template-columns:150px 1fr 35px;
 }
 }
 
 @media(max-width:760px){
-  /* شرط لتغيير التصميم حسب حجم الشاشة أو تفضيل تقليل الحركة */
 .life-score{
-  /* قاعدة تنسيق تستهدف .life-score */
-  position:relative; /* position: طريقة تموضع العنصر */
-  z-index:7; /* z-index: ترتيب الطبقات */
+  position:relative;
+  z-index:7;
 }
 .hero-visual{
-  /* قاعدة تنسيق تستهدف .hero-visual */
-  inset:auto -150px 0 -30px; /* inset: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  height:500px; /* height: الارتفاع */
-  justify-content:center; /* justify-content: توزيع العناصر على المحور الرئيسي */
-  padding:0; /* padding: المسافة الداخلية */
+  inset:auto -150px 0 -30px;
+  height:500px;
+  justify-content:center;
+  padding:0;
 }
 .hero-visual img{
-  /* قاعدة تنسيق تستهدف .hero-visual img */
-  width:760px; /* width: العرض */
-  max-width:none; /* max-width: أقصى عرض */
-  height:auto; /* height: الارتفاع */
-  right:auto; /* right: المسافة من اليمين */
-  bottom:auto; /* bottom: المسافة من الأسفل */
-  opacity:.5; /* opacity: درجة الشفافية */
-  mask-image:linear-gradient(to bottom,transparent 0,#000 18%,#000 88%,transparent 100%); /* mask-image: قناع يتحكم بأجزاء الصورة الظاهرة */
+  width:760px;
+  max-width:none;
+  height:auto;
+  right:auto;
+  bottom:auto;
+  opacity:.5;
+  mask-image:linear-gradient(to bottom,transparent 0,#000 18%,#000 88%,transparent 100%);
 }
 .cert-row{
-  /* قاعدة تنسيق تستهدف .cert-row */
-  grid-template-columns:1fr 34px; /* grid-template-columns: عدد وأحجام أعمدة الشبكة */
-  gap:10px; /* gap: المسافة بين العناصر */
+  grid-template-columns:1fr 34px;
+  gap:10px;
 }
 .cert-row .cert-status{
-  /* قاعدة تنسيق تستهدف .cert-row .cert-status */
-  grid-column:1; /* grid-column: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  grid-column:1;
 }
 .cert-row>span{
-  /* قاعدة تنسيق تستهدف .cert-row>span */
-  grid-column:2; /* grid-column: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
-  grid-row:1; /* grid-row: خاصية CSS تتحكم بمظهر العنصر أو تخطيطه */
+  grid-column:2;
+  grid-row:1;
 }
 .social-links{
-  /* قاعدة تنسيق تستهدف .social-links */
-  grid-template-columns:1fr; /* grid-template-columns: عدد وأحجام أعمدة الشبكة */
+  grid-template-columns:1fr;
 }
 .social-links>a,.social-links>div{
-  /* قاعدة تنسيق تستهدف .social-links>a,.social-links>div */
-  min-height:64px; /* min-height: أقل ارتفاع */
+  min-height:64px;
 }
 .social-links>div{
-  /* قاعدة تنسيق تستهدف .social-links>div */
-  flex-direction:row; /* flex-direction: اتجاه ترتيب العناصر */
-  align-items:center; /* align-items: المحاذاة على المحور العرضي */
-  justify-content:space-between; /* justify-content: توزيع العناصر على المحور الرئيسي */
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-between;
 }
 }
 
-
-/* HTB Academy achievements — integrated into the existing black / crimson palette */
 .htb-achievements{grid-column:1/-1;margin-top:clamp(55px,7vw,105px);padding-top:38px;border-top:1px solid var(--line);min-width:0}
 .htb-achievements-head{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:30px}
 .htb-eyebrow{color:var(--red);font-size:11px;font-weight:800;letter-spacing:.19em;margin:0 0 15px}
@@ -1654,3 +1427,15 @@ html{
 @media(max-width:760px){.htb-achievements-head{display:block}.htb-achievements-head>p{margin-top:18px}.htb-badge-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.htb-badge{padding:16px;min-height:265px}.htb-badge-art{width:82px;height:82px}.htb-badge h4{font-size:16px}}
 @media(max-width:480px){.htb-badge-grid{grid-template-columns:1fr}.htb-badge{min-height:0}.htb-badge-art{width:98px;height:98px}}
 @media(prefers-reduced-motion:reduce){.htb-badge,.htb-badge img{transition:none}.htb-badge:hover{transform:none}}
+
+.progress-100{width:100%}
+.progress-20{width:20%}
+.progress-10{width:10%}
+a:focus-visible,button:focus-visible{outline:2px solid var(--red);outline-offset:5px}
+.site-header:focus-within{transform:none;opacity:1;pointer-events:auto}
+@media(max-width:760px){
+  .menu-button{width:44px;height:44px;padding:10px;background:transparent;border:1px solid var(--line);border-radius:4px;color:var(--text);cursor:pointer}
+  .menu-button>span:not(.sr-only){display:block;height:2px;margin:4px 0;background:currentColor}
+  .site-header nav{visibility:hidden;pointer-events:none;max-height:calc(100dvh - 70px);overflow-y:auto}
+  .site-header nav.open{visibility:visible;pointer-events:auto}
+}
